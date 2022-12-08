@@ -1,19 +1,9 @@
 package solid_ocp_v1;
 
-public class PersistenciaDaFatura {
+public interface PersistenciaDaFatura  {
 
-	Fatura fatura;
 
-    public PersistenciaDaFatura(Fatura fatura) {
-        this.fatura = fatura;
-    }
+    public void salvar(Fatura fatura);
 
-    public void salvarParaArquivoPdf(String nomeArquivo) {
-		System.out.println("Salvar a fatura no arquivo: " + nomeArquivo);
-	}
-
-    public void salvarParaBancoDeDados() {
-    	System.out.println("Salvar a fatura no banco de dados");
-    }
     
 }
